@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_app/views/quiz.dart';
-import 'package:quiz_app/views/start_screen.dart';
 
-void main() {
-  runApp(const Quiz());
+class QuestionsScreen extends StatefulWidget {
+  const QuestionsScreen({Key? key}) : super(key: key);
+
+  @override
+  State<QuestionsScreen> createState() => _QuestionsScreenState();
 }
 
-/*class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
+class _QuestionsScreenState extends State<QuestionsScreen> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -18,9 +17,9 @@ void main() {
             gradient: LinearGradient(
                 colors: [Color.fromARGB(255, 75, 48, 172), Color.fromARGB(255, 49, 120, 116)]
             )
-        ),child: const StartScreen(),
+        ),child: Container(),
         ),
       ),
     );
   }
-}*/
+}
