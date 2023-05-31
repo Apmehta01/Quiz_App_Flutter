@@ -29,16 +29,16 @@ class StartScreen extends StatelessWidget {
             onPressed: () {
               startQuiz();
             },
-            icon: Icon(Icons.arrow_right_alt), // Replace with your desired icon
+            icon: const Icon(Icons.arrow_right_alt), // Replace with your desired icon
             label: ShaderMask(
               shaderCallback: (bounds) {
 // Define the gradient colors
-                return LinearGradient(
+                return const LinearGradient(
                   colors: [Color.fromARGB(255, 49, 120, 116),Color.fromARGB(255, 75, 48, 172)],
                   begin: Alignment.centerLeft,
                   end: Alignment.centerRight,
                 ).createShader(bounds);
-              },child: Text('Start Quiz',style: TextStyle(fontWeight: FontWeight.w700 )),),
+              },child: const Text('Start Quiz',style: TextStyle(fontWeight: FontWeight.w700 )),),
               style:HelperButtonStyles.ElevatedButtonStyle(Colors.white,Colors.deepPurpleAccent,16,15.0,8)
           ),
         ],
